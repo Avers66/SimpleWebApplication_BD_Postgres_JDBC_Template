@@ -26,7 +26,7 @@ public class DatabaseTaskCreator {
 
     private final TaskService taskService;
 
-//    @EventListener(ApplicationStartedEvent.class)
+    @EventListener(ApplicationStartedEvent.class)
     public void createTaskData() {
         List<Task> tasks = new ArrayList<>();
         for (int i = 1; i < 11; i++) {
